@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+        <link rel="stylesheet" href="styles.css">
+        <title>RegEx Form</title>
+    </head>
+    <body>
+        
+        <h1>New User Signup</h1>
+        <h1>Feel proud to join our Happy Users! </h1>
+        <form data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300">
+
+            <input type="text" name="username" placeholder="username" >
+            <p>Username must be and contain 5 - 12 characters</p>
+
+            <input type="text" name="email" placeholder="email" >
+            <p>Email must be a valid address, e.g. johndoe@mydomain.com</p>
+
+            <input type="password" name="password" placeholder="password"  class="password">
+            <p>Password must be alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
+            <input type="password" name="password" placeholder="confirm password"   class="confirmPassword" disabled>
+            <p class="message">Confirm Password. this field is disabled until you have filled the password field</p>
+
+            
+            <input type="password" name="telephone" placeholder="telephone" >
+            <p>Telephone must be a valid Nigeria telephone number (11 digits)</p>
+
+            
+            
+                <button type="submit">Submit</button>
+            
+
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript" src="validation.js"></script>
+    </body>
+</html>
+
+
+
